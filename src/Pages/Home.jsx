@@ -15,7 +15,7 @@ function Home() {
                                 Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
                         </div>
                     </div>
-                    <div className="home-right h-full lg:h-screen w-auto lg:w-full">
+                    <div className="home-right h-full lg:h-screen w-auto md:w-full">
                     </div>
                 </div>
             </div>
