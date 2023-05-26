@@ -3,115 +3,74 @@
 @tailwind utilities;
 
 body {
-    background-image: url('./assets/background.webp');
-    background-size: cover;
+  background-image: url('./assets/background.webp');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  }
+}
 
-  nav {
-    display: none;
-    visibility: hidden;
-  }
+nav {
+  display: none;
+  visibility: hidden;
+}
 
-.menu-nav{
+.menu-nav {
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(10px) !important;
 }
+
 .home-right {
   background-image: url('./assets/homeright.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   transform: rotate(90deg);
 }
 
-.home-left h1{
+.home-left h1 {
   font-family: 'Bellefair';
-font-style: normal;
-font-weight: 100;
-font-size: 50px;
-line-height: 100px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 100px;
 
-/* identical to box height, or 100% */
+  /* identical to box height, or 100% */
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
-.home-left p{
+.home-left p {
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 28px;
-  
+
   /* or 175% */
   text-align: center;
-  
+
   color: #D0D6F9;
 }
 
-.home-left h2{
-  
+.home-left h2 {
+
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  
+
   /* identical to box height */
   text-align: center;
   letter-spacing: 3.375px;
-  
+
   color: #D0D6F9;
-  
-  
+
+
 }
 
 
-
-@media (min-width: 640px) {
-  nav{
-    display: block;
-    visibility: visible;
-  }
-  .home-left h1{
-    font-family: 'Bellefair';
-font-style: normal;
-font-weight: 400;
-font-size: 150px;
-line-height: 172px;
-
-/* identical to box height */
-
-color: #FFFFFF;
-  }
-  
-  .home-left p{
-    font-family: 'Barlow';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 32px;
-
-/* or 178% */
-
-color: #D0D6F9;
-  }
-  
-  .home-left h2{
-    
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    
-    /* identical to box height */
-    letter-spacing: 4.725px;
-    
-    color: #D0D6F9;
-  }
+@media (min-width: 1024px){
   .home-right {
     background-image: url('./assets/homeright.png');
     background-size: cover;
@@ -119,7 +78,52 @@ color: #D0D6F9;
     background-position: center center;
     transform: rotate(0deg);
   }
+
 }
 
+@media (min-width: 640px) {
+  nav {
+    display: block;
+    visibility: visible;
+  }
+
+  .home-left h1 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+
+    /* identical to box height */
+
+    color: #FFFFFF;
+  }
+
+  .home-left p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    /* or 178% */
+
+    color: #D0D6F9;
+  }
+
+  .home-left h2 {
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    /* identical to box height */
+    letter-spacing: 4.725px;
+
+    color: #D0D6F9;
+  }
 
   
+}
