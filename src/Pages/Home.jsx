@@ -5,8 +5,8 @@ function Home() {
         <>
             <div className="">
                 <Navbar />
-                <div className="grid grid-rows-2 lg:grid-cols-2 z-0">
-                    <div className="h-screen flex items-stretch">
+                <div className="h-screen grid justify-items-stretch grid-rows-2 lg:grid-cols-2 z-0">
+                    <div className="lg:h-screen justify-self-center flex items-stretch">
                         <div className="home-left self-center lg:self-end p-14">
                             <h2>SO, YOU WANT TO TRAVEL TO</h2>
                             <h1 className="text-center">SPACE</h1>
@@ -15,7 +15,7 @@ function Home() {
                                 Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
                         </div>
                     </div>
-                    <div className="home-right">
+                    <div className="home-right h-full lg:h-screen w-auto lg:w-full">
                     </div>
                 </div>
             </div>
