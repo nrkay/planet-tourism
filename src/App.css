@@ -20,11 +20,11 @@ nav {
 }
 
 .home-right {
-  background-image: url('./assets/homeright.png');
+  /* background-image: url('./assets/homeright.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(90deg);
+  transform: rotate(90deg); */
 }
 
 .home-left h1 {
