@@ -9,12 +9,26 @@ body {
   background-position: center center;
 }
 
+.menu-cd{
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px) !important;
+}
+
+.nav-log-cd img{
+  height: 35px;
+  width: 35px;
+}
 .nav-lg {
   display: none;
   visibility: hidden;
 }
 
 .menu-nav {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px) !important;
+}
+
+.nav-md {
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(10px) !important;
 }
@@ -80,7 +94,7 @@ body {
 
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px){
   .nav-lg {
     display: block;
     visibility: visible;
