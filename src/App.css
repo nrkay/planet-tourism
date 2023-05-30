@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Style destination section */
+.destinatination{
+  background-image: url('./assets/bg2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.destination-btn-desc button{
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 2.3px;
+}
+
+.destination-desc-item h1{
+  text-align: center;
+  color: white;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 70px;
+line-height: 25px;
+letter-spacing: 3px;
+}
+
+.destination-desc-item p{
+  text-align: justify;
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 2.3px;
+}
+/* End style destination section */
+
 body {
   background-image: url('./assets/background.webp');
   background-size: cover;
@@ -91,10 +132,29 @@ body {
     background-position: center center;
     transform: rotate(0deg);
   }
+  .destination-btn-desc button{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  }
+  
+  .destination-desc-item h1{
+    color: white;
+    font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  }
 
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
   .nav-lg {
     display: block;
     visibility: visible;

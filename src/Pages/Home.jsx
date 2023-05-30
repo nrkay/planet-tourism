@@ -1,12 +1,10 @@
-import Navbar from "../Components/Navbar";
 
 function Home() {
     return (
         <>
-            <Navbar />
-            <div className="h-screen grid justify-items-stretch grid-rows-2 lg:grid-cols-2 z-0 md:mt-6 lg:mt-0 ">
-                <div className="lg:h-screen  justify-self-center flex items-stretch mt-12 md:mt-0">
-                    <div className="home-left self-center lg:self-end p-14">
+            <div className="h-screen grid justify-items-stretch grid-rows-2 lg:grid-cols-2 z-0">
+                <div className="lg:h-screen  justify-self-center flex items-stretch pt-16 md:mt-0">
+                    <div className="home-left self-center lg:self-end p-14 md:mt-48">
                         <h2>SO, YOU WANT TO TRAVEL TO</h2>
                         <h1 className="text-center">SPACE</h1>
                         <p>Let’s face it; if you want to go to space, you might as well

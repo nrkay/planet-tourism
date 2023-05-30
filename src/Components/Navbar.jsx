@@ -1,19 +1,21 @@
-import logo from '../assets/logo.svg'
-import menu from '../assets/Group.png'
-import exitIcon from '../assets/exit.svg'
-import { useState } from 'react';
+import logo from "../assets/logo.svg";
+import menu from "../assets/Group.png";
+import exitIcon from "../assets/exit.svg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 function Navbar() {
-
-    const [classNav, setclassNav] = useState("-translate-x-full md:hidden flex justify-end w-screen");
+    const [classNav, setclassNav] = useState(
+        "-translate-x-full md:hidden flex justify-end w-screen"
+    );
     const handleMenu = () => {
         if (classNav === "-translate-x-full md:hidden flex justify-end w-screen") {
-            setclassNav("translate-x-0 md:hidden flex justify-end w-screen  absolute -top-0")
+            setclassNav(
+                "translate-x-0 md:hidden flex justify-end w-screen  absolute -top-0"
+            );
         } else {
-            setclassNav("-translate-x-full md:hidden flex justify-end w-screen")
+            setclassNav("-translate-x-full md:hidden flex justify-end w-screen");
         }
-
-
-    }
+    };
     return (
         <>
             <nav className="z-10 absolute w-screen">
@@ -24,10 +26,30 @@ function Navbar() {
                         </div>
                         <div className="menu-nav p-5">
                             <ul>
-                                <li className="float-right text-white md:mx-5 lg:mx-10"><span className="font-bold text-white mr-1">03</span> Home</li>
-                                <li className="float-right text-white md:mx-5 lg:mx-10"><span className="font-bold text-white mr-1">02</span> Home</li>
-                                <li className="float-right text-white md:mx-5 lg:mx-10"><span className="font-bold text-white mr-1">01</span> Home</li>
-                                <li className="float-right text-white md:mx-5 lg:mx-10"><span className="font-bold text-white mr-1">01</span> Home</li>
+                                <Link
+                                    to={"/technology"}
+                                    className="float-right text-white md:mx-5 lg:mx-10"
+                                >
+                                    <span className="font-bold text-white mr-1">03</span>TECHNOLOGY
+                                </Link>
+                                <Link
+                                    to={"/crew"}
+                                    className="float-right text-white md:mx-5 lg:mx-10"
+                                >
+                                    <span className="font-bold text-white mr-1">02</span>CREW
+                                </Link>
+                                <Link
+                                    to={"/destination"}
+                                    className="float-right text-white md:mx-5 lg:mx-10"
+                                >
+                                    <span className="font-bold text-white mr-1">01</span>DESTINATION
+                                </Link>
+                                <Link
+                                    to={"/"}
+                                    className="float-right text-white md:mx-5 lg:mx-10"
+                                >
+                                    <span className="font-bold text-white mr-1">00</span>HOME
+                                </Link>
                             </ul>
                         </div>
                     </div>
@@ -35,32 +57,41 @@ function Navbar() {
 
                 {/* nav for mobile */}
                 <div className="nav-md flex justify-between w-screen p-3 my-3 text-white md:hidden">
-                    <div className="nav-log-cd px-2"><img src={logo} alt="" /></div>
-                    <div className="pt-1 px-2"><button onClick={handleMenu}><img src={menu} alt="" /></button></div>
+                    <div className="nav-log-cd px-2">
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className="pt-1 px-2">
+                        <button onClick={handleMenu}>
+                            <img src={menu} alt="" />
+                        </button>
+                    </div>
                 </div>
                 {/* end nav for mobile */}
                 {/* menu in navbar for mobile */}
                 <div className={classNav}>
                     <div className="menu-cd w-3/4  h-screen p-5">
                         <div className="grid justify-items-stretch mb-10">
-                            <button className='justify-self-end' onClick={handleMenu}>
+                            <button className="justify-self-end" onClick={handleMenu}>
                                 <img src={exitIcon} alt="" />
                             </button>
                         </div>
-                        <ul className='mx-5'>
-                            <li className="float-right text-white w-full my-2"><span className="font-bold mr-1">03</span> Home</li>
-                            <li className="float-right text-white w-full my-2"><span className="font-bold mr-1">03</span> Home</li>
-                            <li className="float-right text-white w-full my-2"><span className="font-bold mr-1">03</span> Home</li>
-                            <li className="float-right text-white w-full my-2"><span className="font-bold mr-1">03</span> Home</li>
+                        <ul className="mx-5">
+                            <li className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">03</span> Home
+                            </li>
+                            <li className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">03</span> Home
+                            </li>
+                            <li className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">03</span> Home
+                            </li>
+                            <li className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">03</span> Home
+                            </li>
                         </ul>
                     </div>
                 </div>
-
-
-
-
             </nav>
-
         </>
     );
 }
