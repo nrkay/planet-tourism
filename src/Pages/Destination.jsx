@@ -55,10 +55,10 @@ function Destination() {
 
             </div> */}
             <div className="destinatination h-screen">
-                <div className="lg:mx-12 h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 pt-20 lg:pt-32">
+                <div className="lg:mx-12 h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 pt-20 md:pt-32">
                     <div className="grid justify-items-stretch">
                         <h1 className="text-white px-4 mt-6"><span className="font-bold">01</span> PICK YOUR DESTINATION</h1>
-                        <img className="w-3/5 justify-self-center self-center lg:pt-8" src={planet} alt="" />
+                        <img className="w-3/5 lg:w-3/5 md:w-2/5 justify-self-center self-center lg:pt-8" src={planet} alt="" />
                     </div>
                     <div className="px-11 lg:px-24 lg:pt-20">
                         <div className="destination-btn-desc flex justify-between">
@@ -68,8 +68,23 @@ function Destination() {
                             <button>TITAN</button>
                         </div>
                         <div className="destination-desc-item mt-9">
-                            <h1>MARS</h1>
-                            <p className="pt-14">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!!</p>
+                            <div className="destination-items">
+                                <h1>MARS</h1>
+                                <p className="">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!!</p>
+                            </div >
+                            <div className="destination-items">
+                                <h1>MOON</h1>
+                                <p className="">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!!</p>
+                            </div>
+                            <div className="destination-items">
+                                <h1>AUROPE</h1>
+                                <p className="">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!!</p>
+                            </div>
+                            <div className="destination-items">
+                                <h1>MARS</h1>
+                                <p className="">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!!</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
