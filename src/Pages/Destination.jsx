@@ -55,7 +55,7 @@ function Destination() {
 
             </div> */}
             <div className="destinatination h-screen">
-                <div className="lg:mx-12 h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 pt-32">
+                <div className="lg:mx-12 h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 pt-20 lg:pt-32">
                     <div className="grid justify-items-stretch">
                         <h1 className="text-white px-4 mt-6"><span className="font-bold">01</span> PICK YOUR DESTINATION</h1>
                         <img className="w-3/5 justify-self-center self-center lg:pt-8" src={planet} alt="" />
