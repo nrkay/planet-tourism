@@ -30,7 +30,8 @@ function Navbar() {
                                     to={"/technology"}
                                     className="float-right text-white md:mx-5 lg:mx-10"
                                 >
-                                    <span className="font-bold text-white mr-1">03</span>TECHNOLOGY
+                                    <span className="font-bold text-white mr-1">03</span>
+                                    TECHNOLOGY
                                 </Link>
                                 <Link
                                     to={"/crew"}
@@ -42,7 +43,8 @@ function Navbar() {
                                     to={"/destination"}
                                     className="float-right text-white md:mx-5 lg:mx-10"
                                 >
-                                    <span className="font-bold text-white mr-1">01</span>DESTINATION
+                                    <span className="font-bold text-white mr-1">01</span>
+                                    DESTINATION
                                 </Link>
                                 <Link
                                     to={"/"}
@@ -76,18 +78,24 @@ function Navbar() {
                             </button>
                         </div>
                         <ul className="mx-5">
-                            <li className="float-right text-white w-full my-2">
-                                <span className="font-bold mr-1">03</span> Home
-                            </li>
-                            <li className="float-right text-white w-full my-2">
-                                <span className="font-bold mr-1">03</span> Home
-                            </li>
-                            <li className="float-right text-white w-full my-2">
-                                <span className="font-bold mr-1">03</span> Home
-                            </li>
-                            <li className="float-right text-white w-full my-2">
-                                <span className="font-bold mr-1">03</span> Home
-                            </li>
+                            <Link to={"/"} className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">00</span>HOME
+                            </Link>
+                            <Link
+                                to={"/destination"}
+                                className="float-right text-white w-full my-2"
+                            >
+                                <span className="font-bold mr-1">01</span>DESTINATION
+                            </Link>
+                            <Link to={"/crew"} className="float-right text-white w-full my-2">
+                                <span className="font-bold mr-1">02</span>CREW
+                            </Link>
+                            <Link
+                                to={"/technology"}
+                                className="float-right text-white w-full my-2"
+                            >
+                                <span className="font-bold mr-1">03</span>TECHNOLOGY
+                            </Link>
                         </ul>
                     </div>
                 </div>
