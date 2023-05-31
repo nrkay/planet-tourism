@@ -3,18 +3,7 @@
 @tailwind utilities;
 
 /* Style destination section */
-.destination-desc-item {
-  -webkit-overflow-scrolling: touch;
-  width: 430px;
-  display: flex;
-  overflow-x: auto;
-}
-.destination-items {
-  padding: 10px;
-  width: 430px;
-  flex-shrink: 0;
-  height: 100%;
-}
+
 .destinatination{
   background-image: url('./assets/bg2.webp');
   background-size: cover;
@@ -28,6 +17,25 @@
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
+line-height: 15px;
+letter-spacing: 2.3px;
+}
+.destination-btn-desc button:active{
+  border-bottom: 1px solid white;
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 2.3px;
+}
+.destination-btn-desc button:hover{
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
 line-height: 15px;
 letter-spacing: 2.3px;
 }
