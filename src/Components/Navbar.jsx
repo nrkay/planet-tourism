@@ -5,15 +5,24 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
     const [classNav, setclassNav] = useState(
-        "-translate-x-full md:hidden flex justify-end w-screen"
+        "hidden md:hidden flex justify-end w-screen  absolute -top-0"
     );
+    // const handleMenu = () => {
+    //     if (classNav === "-translate-x-full md:hidden flex justify-end w-screen") {
+    //         setclassNav(
+    //             "translate-x-0 md:hidden flex justify-end w-screen  absolute -top-0"
+    //         );
+    //     } else {
+    //         setclassNav("-translate-x-full md:hidden flex justify-end w-screen");
+    //     }
+    // };
     const handleMenu = () => {
-        if (classNav === "-translate-x-full md:hidden flex justify-end w-screen") {
+        if (classNav === "hidden md:hidden flex justify-end w-screen  absolute -top-0") {
             setclassNav(
-                "translate-x-0 md:hidden flex justify-end w-screen  absolute -top-0"
+                "md:hidden flex justify-end w-screen  absolute -top-0"
             );
         } else {
-            setclassNav("-translate-x-full md:hidden flex justify-end w-screen");
+            setclassNav("hidden md:hidden flex justify-end w-screen  absolute -top-0");
         }
     };
     return (

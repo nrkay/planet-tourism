@@ -20,16 +20,7 @@ font-size: 13px;
 line-height: 15px;
 letter-spacing: 2.3px;
 }
-.destination-btn-desc button:active{
-  border-bottom: 1px solid white;
-  color: #D0D6F9;
-  font-family: 'Barlow Condensed';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 15px;
-letter-spacing: 2.3px;
-}
+
 .destination-btn-desc button:hover{
   color: #D0D6F9;
   font-family: 'Barlow Condensed';

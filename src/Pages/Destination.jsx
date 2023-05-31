@@ -9,14 +9,11 @@ import { useState } from "react"
 function Destination() {
 
     const [index, setIndex] = useState(0);
-    const [isActive, setIsActive] = useState(false);
     const [descContent, setDescContent] = useState("See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take some history by visiting the Luna 2 and Apollo 11 landing sites.");
     const [distanceContent, setDistanceContent] = useState();
     const [time, setTime] = useState();
-    const [image, setImage] = useState();
     const [title, setTitle] = useState("MOON");
 
-    console.log(image)
 
     const content = [{
         "id": 1,
@@ -53,47 +50,30 @@ function Destination() {
     ]
     return (
         <>
-            {/* <div className="destinatination">
-                <div className="mx-12">
-                    <div className="destination-title">
-                        <h1><span>01</span>PISK YOUR DESTINATION</h1>
-                    </div>
-                    <div className="destination-content grid grid-rows-2 lg:grid-cols-2">
-                        <div className="img-planet flex justify-center items-center">
-                            <div className="bg-green-300">
-                                <img src={planet} alt="" />
-                            </div>
-                        </div>
-                        <div className="">ini desc</div>
-                    </div>
-                </div>
-
-            </div> */}
             <div className="destinatination h-screen">
                 <div className="lg:mx-12 h-full grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 pt-20 md:pt-32">
                     <div className="grid justify-items-stretch">
                         <h1 className="text-white px-4 mt-6"><span className="font-bold">01</span> PICK YOUR DESTINATION</h1>
-                        <img className="w-3/5 lg:w-3/5 md:w-2/5 justify-self-center self-center lg:pt-8" src={image} alt="" />
+                        <img className="w-3/5 lg:w-3/5 md:w-2/5 justify-self-center self-center lg:pt-8" src={moon} alt="" />
                     </div>
                     <div className="px-11 lg:px-24 lg:pt-20">
                         <div className="destination-btn-desc flex justify-between">
                             {content.map((item) => {
                                 return (
                                     <>
-                                        <button key={item.id} className={`p-4 ${isActive ? 'active' : ''}`} onClick={(e) => {
+                                        <button key={item.id} className="p-4" onClick={(e) => {
                                             e.preventDefault();
                                             setIndex(item.id)
                                             setDescContent(item.desc)
                                             setDistanceContent(item.distance)
-                                            setImage(item.img)
                                             setTitle(item.title)
-                                            setIsActive(!isActive)
                                         }}>{item.title}</button>
                                     </>
                                 )
                             })}
+
                         </div>
-                        <div className="destination-desc-item mt-9 grid grid-rows-2">
+                        <div className="destination-desc-item mt-9 grid grid-rows-2 ">
                             {/* {content.filter(item => item.id === index).map((item) => {
                                 return (
                                     <>
