@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root{
+  --menu-height: 300px;
+}
+/* Style Technology section */
+.technology {
+  background-image: url('./assets/technologi_bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.content-item{
+  /* position: absolute; */
+  width: 450px;
+  transition: 0.6s;
+}
+
+.tech-desc-content {
+  height: 300px !important;
+  position: relative;
+  overflow: hidden;
+}
+.tech-desc-content-items {
+  height: 300px !important;
+  width: 75%;
+  z-index: 1;
+}
+/* End Style Technology Section */
+
+.crew button{
+  padding: 3px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+
 /* Style destination section */
 
 .destinatination{
