@@ -27,16 +27,17 @@ function Technology() {
         <>
             <div className="technology h-screen lg:h-auto">
                 <div className="lg:px-16 px-5 pt-24">
-                    <div className="">
-                        <h1><span>03</span> SPANCE LAUNCHE</h1>
+                    <div className="lg:translate-y-12">
+                        <h1 className="text-white"><span className="font-bold">03</span> SPANCE LAUNCHE</h1>
                     </div>
-                    <div className="grid gap-4 content-center lg:grid-cols-12 grid-rows-2 lg:grid-rows-none lg:h-screen  bg-red-300">
-                        <div className="w-4/5 tech-desc lg:col-span-7 lg:flex bg-green-300">
-                            <div className="lg:w-1/4 flex justify-center lg:grid lg:self-center bg-yellow-300">
+                    {/* section description */}
+                    <div className="grid gap-4 content-center lg:grid-cols-12 grid-rows-2 lg:grid-rows-none lg:h-screen">
+                        <div className="tech-desc lg:col-span-7 lg:flex">
+                            <div className="lg:w-1/4 flex justify-center lg:grid lg:self-center">
                                 {content.map((item, index) => {
                                     return (
                                         <>
-                                            <button key={item.id} className="w-fit h-fit m-3 px-5 lg:px-7 py-3 lg:py-5 rounded-full bg-white" onClick={(e) => {
+                                            <button key={item.id} className="btn-desc-tech border-2 border-slate-300 w-fit h-fit m-3 px-5 lg:px-7 py-3 lg:py-5 rounded-full text-white bg-transparent" onClick={(e) => {
                                                 e.preventDefault();
                                                 setFiled(index)
                                             }}> <h6>{item.id}</h6></button>
@@ -45,25 +46,15 @@ function Technology() {
                                     )
                                 })}
                             </div>
-                            {/* <div className="tech-desc-items lg:w-3/4">
-                                <p>The Terminology....</p>
-                                {content.filter(item => item.id === filed).map((item) => {
-                                    return (
-                                        <>
-                                            <h3>{item.title}</h3>
-                                            <p>{item.desc}</p>
-                                        </>
-                                    )
-                                })}
-                            </div> */}
-
-                            <div className="tech-desc-content bg-blue-500 lg:w-3/4">
+                            <div className="tech-desc-content lg:w-3/4 m-auto">
                                 <div className="content-item"
                                     style={{ translate: `0 calc(0px - ${filed} * ${menuHeight})` }}>
                                     {content.map((item, index) => {
                                         return (
                                             <>
-                                                <div key={index} className="tech-desc-content-items bg-red-500">
+                                                <div key={index} className="tech-desc-content-items pr-28">
+                                                    <h3>THE TERMINOLOGY...</h3>
+                                                    <h2>{item.title}</h2>
                                                     <p>{item.desc}</p>
                                                 </div>
                                             </>
@@ -72,12 +63,14 @@ function Technology() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* section image  */}
                         <div className="tech-img lg:col-span-5">
                             untuk gambar
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

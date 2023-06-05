@@ -4,9 +4,56 @@
 
 
 :root{
-  --menu-height: 300px;
+  --menu-height: 400px;
 }
+
 /* Style Technology section */
+
+.tech-desc-content-items h3{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 2.3625px;
+  
+  color: #D0D6F9;
+}
+
+.tech-desc-content h2{
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+}
+
+.tech-desc-content p{
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  
+  text-align: center;
+  
+  color: #D0D6F9;
+}
+
+.btn-desc-tech {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px) !important;
+}
 .technology {
   background-image: url('./assets/technologi_bg.webp');
   background-size: cover;
@@ -21,13 +68,14 @@
 }
 
 .tech-desc-content {
-  height: 300px !important;
+  height: 400px !important;
   position: relative;
   overflow: hidden;
+  max-width: 350px;
 }
 .tech-desc-content-items {
-  height: 300px !important;
-  width: 75%;
+  height: 400px !important;
+  /* width: 75%; */
   z-index: 1;
 }
 /* End Style Technology Section */
@@ -198,6 +246,41 @@ body {
   line-height: 25px;
   letter-spacing: 3px;
   }
+
+  /* Style for technology page */
+  .tech-desc-content-items h3{
+    text-align: left;
+    font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  }
+  
+  .tech-desc-content h2{
+    text-align: left;
+    font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  
+  color: #FFFFFF;
+  }
+  
+  .tech-desc-content p{
+    text-align: left;
+    padding-top: 8px;
+    font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #D0D6F9;
+  }
+  /* End Style for Technology Page */
 
 }
 
