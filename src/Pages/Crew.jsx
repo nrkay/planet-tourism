@@ -1,4 +1,5 @@
 import { useState } from "react";
+import crew1 from '../assets/crew1.webp'
 function Crew() {
     const itemWidth = getComputedStyle(document.documentElement).getPropertyValue("--item-width");
 
@@ -6,16 +7,25 @@ function Crew() {
     const [button, setButton] = useState();
     const content = [
         {
-            "id": 1,
-            "desc": "ini satu",
+            "desc": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+            "name": "Douglas Hurley",
+            "position": "Commander",
+
         },
         {
-            "id": 2,
-            "desc": "ini satu",
+            "desc": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+            "name": "MARK SHUTTLEWORTH",
+            "position": "Mission Specialist ",
         },
         {
-            "id": 3,
-            "desc": "ini satu",
+            "desc": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ",
+            "name": "Victor Glover",
+            "position": "Pilot ",
+        },
+        {
+            "desc": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
+            "name": "Anousheh Ansari",
+            "position": "Flight Engineer ",
         },
     ]
 
@@ -29,21 +39,23 @@ function Crew() {
 
     return (
         <>
-            <div className="crew h-full bg-slate-400">
-                <div className=" mx-4 lg:mx-12 bg-red-200 translate-y-28 h-4/5">
+            {/* <div className="crew h-full "> */}
+            <div className="crew h-screen">
+                {/* <div className=" mx-4 lg:mx-12  translate-y-28 h-4/5"> */}
+                <div className=" mx-4 lg:mx-12  translate-y-28">
                     <h4><span>02</span>MEET YOUR CREW</h4>
-                    <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2">
-                        <div className="crew-desc grid justify-items-center bg-yellow-300">
+                    <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 max-h-full">
+                        <div className=" crew-desc grid justify-items-center order-2 lg:order-1 ">
                             {/* slides */}
-                            <div className="crew-desc-item bg-red-300" style={{ translate: `calc(0 px - ${currentIndex} * ${itemWidth}) 0` }}>
+                            <div className="crew-desc-item " style={{ translate: `calc(0 px - ${currentIndex} * ${itemWidth}) 0` }}>
                                 <div className="crew-desc-items flex min-w-2/3"
                                     style={{ translate: `calc(0px - ${currentIndex} * ${itemWidth}) 0` }}>
                                     {content.map((item, index) => {
                                         return (
                                             <div key={index} className="element-item min-w-[320px] z-10 p-4">
-                                                <h5>Pilot</h5>
-                                                <h2>Nur Khairiyah</h2>
-                                                <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+                                                <h5>{item.position}</h5>
+                                                <h2>{item.name}</h2>
+                                                <p>{item.desc}</p>
                                             </div>
                                         )
                                     })}
@@ -63,8 +75,10 @@ function Crew() {
 
 
                         </div>
-                        <div className="crew-img bg-green-500">
-                            <h1>ini gambar</h1>
+                        <div className=" crew-img max-h-fit order-1 lg:order-2 flex justify-center">
+                            <div className="h-56 lg:h-96">
+                                <img className="max-h-full" src={crew1} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
