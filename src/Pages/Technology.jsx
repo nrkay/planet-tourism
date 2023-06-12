@@ -1,4 +1,6 @@
 import { useState } from "react";
+import tech1 from "../assets/technology1.webp"
+import "../Style/tech.css"
 function Technology() {
     const menuHeight = getComputedStyle(document.documentElement).getPropertyValue("--menu-height");
 
@@ -25,14 +27,14 @@ function Technology() {
     ]
     return (
         <>
-            <div className="technology h-screen lg:h-auto">
+            <div className="technology lg:h-auto ">
                 <div className="lg:px-16 px-5 pt-24">
                     <div className="lg:translate-y-12">
                         <h1 className="text-white"><span className="font-bold">03</span> SPANCE LAUNCHE</h1>
                     </div>
                     {/* section description */}
-                    <div className="grid gap-4 content-center lg:grid-cols-12 grid-rows-2 lg:grid-rows-none lg:h-screen">
-                        <div className="tech-desc lg:col-span-7 lg:flex">
+                    <div className="grid gap-4 content-center lg:grid-cols-12 grid-rows-3 lg:grid-rows-none lg:h-screen">
+                        <div className="tech-desc row-span-2 lg:col-span-7 lg:flex order-last lg:order-2 translate-y-6 lg:-translate-y-6">
                             <div className="lg:w-1/4 flex justify-center lg:grid lg:self-center">
                                 {content.map((item, index) => {
                                     return (
@@ -46,13 +48,13 @@ function Technology() {
                                     )
                                 })}
                             </div>
-                            <div className="tech-desc-content lg:w-3/4 m-auto">
+                            <div className="tech-desc-content lg:w-3/4 m-auto translate-y-3 lg:-translate-y-3">
                                 <div className="content-item"
                                     style={{ translate: `0 calc(0px - ${filed} * ${menuHeight})` }}>
                                     {content.map((item, index) => {
                                         return (
                                             <>
-                                                <div key={index} className="tech-desc-content-items pr-28">
+                                                <div key={index} className="tech-desc-content-items pr-28 lg:translate-y-10">
                                                     <h3>THE TERMINOLOGY...</h3>
                                                     <h2>{item.title}</h2>
                                                     <p>{item.desc}</p>
@@ -65,8 +67,8 @@ function Technology() {
                         </div>
 
                         {/* section image  */}
-                        <div className="tech-img lg:col-span-5">
-                            untuk gambar
+                        <div className="tech-img lg:col-span-5 lg:order-2">
+                            <img className="object-none object-center max-h-64 min-w-full lg:max-h-96 translate-y-5 lg:-translate-y-5" src={tech1} alt="" />
                         </div>
                     </div>
                 </div>

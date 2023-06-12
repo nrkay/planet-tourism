@@ -5,6 +5,73 @@
 
 :root{
   --menu-height: 400px;
+  --item-width: 320px;
+}
+
+/* Style crew section*/
+.crew-desc-item {
+  position: relative;
+  scroll-snap-type: both mandatory;
+  width: 320px;
+  overflow: scroll;
+}
+
+/* sembunyikan scroll bar dari chrom, safari, dan opera */
+.crew-desc-item::-webkit-scrollbar{
+  display: none;
+}
+
+/* sembunyikan scrollbar dari IE, Edge, dan Firefox */
+.crew-desc-item{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.element-item{
+  scroll-snap-align: center;
+}
+
+.element-item h5{
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+/* or 175% */
+text-align: center;
+
+color: #D0D6F9;
+}
+
+.element-item h2{
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 45px;
+
+/* identical to box height */
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.element-item p{
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 200;
+font-size: 13px;
+line-height: 20px;
+
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.crew-desc-items{
+  transition: 0.6s;
 }
 
 /* Style Technology section */
