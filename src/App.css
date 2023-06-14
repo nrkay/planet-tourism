@@ -4,11 +4,22 @@
 
 
 :root{
-  --menu-height: 400px;
+  --menu-height: 250px;
   --item-width: 320px;
+  --img-width: 300px;
 }
 
+
+
+
+
 /* Style crew section*/
+
+.imgs-crew{
+  overflow: scroll;
+  position: relative;
+  transition: 0.6s;
+}
 .crew-desc-item {
   position: relative;
   scroll-snap-type: both mandatory;
@@ -75,52 +86,15 @@ color: #FFFFFF;
 }
 
 /* Style Technology section */
-
-.tech-desc-content-items h3{
-  font-family: 'Barlow Condensed';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 2.3625px;
-  
-  color: #D0D6F9;
+.tech-descc{
+  overflow: hidden;
+  position: relative;
 }
 
-.tech-desc-content h2{
-  font-family: 'Bellefair';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  
-  /* identical to box height */
-  text-align: center;
-  text-transform: uppercase;
-  
-  color: #FFFFFF;
+.deskripsi-main{
+  transition: 0.6s;
 }
 
-.tech-desc-content p{
-
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  
-  text-align: center;
-  
-  color: #D0D6F9;
-}
-
-.btn-desc-tech {
-  background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(10px) !important;
-}
 .technology {
   background-image: url('./assets/technologi_bg.webp');
   background-size: cover;
@@ -128,22 +102,26 @@ color: #FFFFFF;
   background-position: center center;
 }
 
-.content-item{
-  /* position: absolute; */
-  width: 450px;
-  transition: 0.6s;
+.tech-descc p{
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: #D0D6F9;
 }
 
-.tech-desc-content {
-  height: 400px !important;
-  position: relative;
-  overflow: hidden;
-  max-width: 350px;
-}
-.tech-desc-content-items {
-  height: 400px !important;
-  /* width: 75%; */
-  z-index: 1;
+.tech-descc h2{
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }
 /* End Style Technology Section */
 
@@ -162,7 +140,7 @@ color: #FFFFFF;
   background-position: center center;
 }
 
-.destination-btn-desc button{
+.destination-button  button{
   color: #D0D6F9;
   font-family: 'Barlow Condensed';
 font-style: normal;
@@ -172,7 +150,7 @@ line-height: 15px;
 letter-spacing: 2.3px;
 }
 
-.destination-btn-desc button:hover{
+.destination-button button:hover{
   color: #D0D6F9;
   font-family: 'Barlow Condensed';
 font-style: normal;
@@ -182,24 +160,35 @@ line-height: 15px;
 letter-spacing: 2.3px;
 }
 
-.destination-desc-item h1{
+.destination-desc h1{
   text-align: center;
   color: white;
   font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 600;
-font-size: 70px;
+/* font-size: 70px; */
 line-height: 25px;
 letter-spacing: 3px;
 }
 
-.destination-desc-item p{
+.destination-desc p{
   text-align: justify;
   color: #D0D6F9;
   font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
+line-height: 15px;
+letter-spacing: 2.3px;
+}
+
+.destination-desc h5 {
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 600;
+padding-top: 8px;
+font-size: 18px;
 line-height: 15px;
 letter-spacing: 2.3px;
 }
@@ -294,7 +283,7 @@ body {
     background-position: center center;
     transform: rotate(0deg);
   }
-  .destination-btn-desc button{
+  .destination-button button{
     color: #D0D6F9;
     font-family: 'Barlow Condensed';
   font-style: normal;
@@ -304,17 +293,23 @@ body {
   letter-spacing: 2.7px;
   }
   
-  .destination-desc-item h1{
+  .destination-desc h1{
+    text-align: left;
     color: white;
     font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 600;
-  font-size: 120px;
+  /* font-size: 120px; */
   line-height: 25px;
   letter-spacing: 3px;
   }
 
   /* Style for technology page */
+  /* ============ */
+  /* ============== */
+
+
+
   .tech-desc-content-items h3{
     text-align: left;
     font-family: 'Barlow Condensed';
