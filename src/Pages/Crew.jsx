@@ -93,13 +93,15 @@ function Crew() {
                                 ))}
                             </div>
                         </div>
+
+                        {/* image section */}
                         <div className=" crew-img max-h-fit order-1 lg:order-2 flex justify-center">
-                            <div className="hidden lg:block">
-                                <div className="h-56 lg:h-96 bg-red-300 flex justify-center">
+                            <div className="hidden lg:block order-2 lg:order-1">
+                                <div className="h-56 lg:h-96 flex justify-center">
                                     {content.filter(item => item.id == currentIndex).map((item) => {
                                         return (
                                             <>
-                                                <img className="max-h-full bg-green-300" src={item.img} alt="" />
+                                                <img className="max-h-full" src={item.img} alt="" />
                                             </>
 
                                         )
@@ -107,20 +109,20 @@ function Crew() {
                                 </div>
                             </div>
                             <div className="lg:hidden">
-                                <div className="imgs-crew h-56 w-[300px] lg:h-96 bg-red-300 flex z-10"
+                                <div className="imgs-crew h-56 w-[300px] lg:h-96 flex z-10"
                                     style={{
                                         translate: `calc(0px - ${currentIndex} * ${imgWidth}) 0`,
                                     }}
                                 >
-                                    <div className="min-w-[300px] h-56 bg-green-300">
-                                        <h1>1</h1>
-                                    </div>
-                                    <div className="min-w-[300px] h-56 bg-yellow-300">
-                                        <h1>1</h1>
-                                    </div>
-                                    <div className="min-w-[300px] h-56 bg-green-600">
-                                        <h1>1</h1>
-                                    </div>
+                                    {content.map((item, index) => {
+                                        return (
+                                            <>
+                                                <div className="min-w-[300px] h-56 ">
+                                                    <img className="max-h-full mx-auto" src={item.img} alt="" />
+                                                </div>
+                                            </>
+                                        )
+                                    })}
                                 </div>
                             </div>
 
