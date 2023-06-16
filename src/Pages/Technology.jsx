@@ -39,12 +39,6 @@ function Technology() {
         setFiled(index)
     }
 
-    // const handleHeight = () => {
-    //     let height = 0 - menuHeight * filed
-    //     console.log(height)
-    //     setHeightDesc(height);
-    // }
-    // handleHeight();
 
     console.log(filed)
     return (
